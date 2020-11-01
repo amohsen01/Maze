@@ -133,16 +133,13 @@ void setGoal(int p1, int p2, vector<Cell>& x) {
 void Printline(vector<Cell> x, int start = 0) {
 
 	for (int i = start; i < start + 4; i++) {
-		if (i - start != 0 && x[i - 1].checkLeft()) {
-			x[i].printData(); x[i].printRight();
+		if (i - start == 0 ) {
+			x[i].printLeft(); x[i].printData(); x[i].printRight();
 		}
-		else if (i - start != 0 && x[i - 1].checkRight()) {
-			x[i].printData(); x[i].printRight();
-		}
-		else { x[i].printLeft(); x[i].printData(); x[i].printRight(); }
+		else {  x[i].printData(); x[i].printRight(); }
 	}
-	(x[start + 4].checkData()) ? printf("%c ", x[start + 4].getData()) : printf("  ");
-	(x[start + 4].checkRight()) ? printf(" |\n") : printf(" \n");
+	(x[start + 4].checkData()) ? printf(" %c ", x[start + 4].getData()) : printf("   ");
+	(x[start + 4].checkRight()) ? printf("|\n") : printf(" \n");
 	printf("+");
 	for (int i = start; i < start + 4; i++) {
 		x[i].printBelow();
