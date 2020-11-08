@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\pirat\Desktop\Maze-main\Project65\Project65\Source.cpp(7,10): warning C4101: 'n2': unreferenced local variable
+C:\Users\pirat\Desktop\Maze-main\Project65\Project65\Source.cpp(7,6): warning C4101: 'n1': unreferenced local variable
+  Project65.vcxproj -> C:\Users\pirat\Desktop\Maze-main\Project65\x64\Debug\Project65.exe
